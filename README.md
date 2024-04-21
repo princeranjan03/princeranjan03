@@ -1,7 +1,7 @@
 <!-- Intro  -->
 <h3 align="center">
         <samp>&gt; Hi 👋, I'm
-                <b><a target="_blank" href="https://chirags-portfolio.vercel.app">Prince Ranjan</a></b>
+                <b><a target="_blank" href="https://">Prince Ranjan</a></b>
         </samp>
 </h3>
 
@@ -39,8 +39,7 @@
  
 <p>
 
- ✌️ &emsp; Enjoy to do programming and love to see the output <br/><br/>
- ❤️ &emsp; Love to writing code and learning new features<br/><br/>
+ ✌️ &emsp; Hi there! I'm Prince Ranjan, currently pursuing Electronics and Communication Engineering at NIT Jalandhar. I have a passion for coding and specialize in front-end development. I love creating engaging user experiences and exploring new technologies. Nice to meet you! <br/><br/>
  📧 &emsp; Reach me anytime: princeranjan13073@gmail.com<br/><br/>
  💬 &emsp; Ask me about anything [here](https://github.com/princeranjan03/princeranjan03/issues)
 
@@ -71,7 +70,7 @@
 <!-- ![Strapi](https://img.shields.io/badge/strapi-2E7EEA?style=for-the-badge&logo=strapi&logoColor=white) -->
 <br/>
 
-## Top Open Source -
+<!--## Top Open Source --->
 
 <!--[![Portfolio-Website](https://github-readme-stats.vercel.app/api/pin/?username=princeranjan03&repo=Portfolio-Website&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/princeranjan03/Portfolio-Website)-->
 <!--[![Chirag Jain Readme](https://github-readme-stats.vercel.app/api/pin/?username=princeranjan03&repo=princeranjan03&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/princeranjan03/princeranjan03)-->
