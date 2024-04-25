@@ -96,9 +96,7 @@ JE Rotate_Left          ; Jump to Rotate Left function
 CMP CX, 14
 JE Rotate_Right         ; Jump to Rotate Right function
 
-; Define functions for each operation as in the previous code...
-
-; Addition function example
+; Addition Function
 Addition:
 print 'Addition:'
 printn
@@ -123,9 +121,33 @@ CALL print_num       ; Print the result
 
 JMP Con               ; Go to the continuation function
 
-; Additional functions omitted for brevity...
+; Subtraction Function
+Subtraction:
+print 'Subtraction:'
+printn
+print 'Enter first number: '
+CALL scan_num       ; Read the first number
+MOV val1, CX        ; Store it in val1   
 
-Con:                   ; Continue Function
+print 'Enter second number: '
+CALL scan_num       ; Read the second number
+MOV val2, CX        ; Store it in val2
+
+MOV AX, val1
+SUB AX, val2        ; Subtraction operation
+MOV res, AX         ; Store result in `res`
+
+MOV AH, 9
+MOV DX, OFFSET msg_S
+INT 21h              ; Display the result message
+
+MOV AX, res
+CALL print_num       ; Print the result
+
+JMP Con               ; Go to the continuation function
+
+; Continue Function
+Con:
 printn
 MOV AH, 9
 MOV DX, OFFSET cont    ; Display continuation message
@@ -138,12 +160,12 @@ CMP agn, 1
 JE Start               ; If user wants to continue, go back to Start
 
 CMP agn, 0
-JE _Bye                ; If user wants to exit, go to exit function
+JE _Bye                ; If user wants to exit, go to the exit function
 
-_Bye:                  ; Exit function
+_Bye:                   ; Exit function
 MOV AH, 9
 MOV DX, OFFSET bye    ; Display the exit message
-INT 21h
+INT 21h                ; Call interrupt to display the exit message
 
 MAIN ENDP
 
@@ -153,5 +175,5 @@ DEFINE_PRINT_NUM_UNS
 
 END MAIN
 
-HLT         ; Halt
+HLT         ; Halting
 ret         ; Return
