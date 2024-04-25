@@ -8,7 +8,7 @@ org 100h
 
 .data       ;Data Segment
 
-msg_intro db '  1. Addition', 0dh,0ah, '  2. Subtration', 0dh,0ah, '  3. Multiplication', 0dh,0ah, '  4. Division', 0dh,0ah, '  5. Negation', 0dh,0ah, '  6. Square', 0dh,0ah, '  7. Cube', 0dh,0ah, '  8. OR', 0dh,0ah, '  9. AND ', 0dh,0ah, ' 10. XOR', 0dh,0ah, ' 11. NOT',0dh,0ah, ' 12. Modulus',0dh,0ah, '  0. EXIT', '$'
+msg_intro db '  1. Addition', 0dh,0ah, '  2. Subtration', 0dh,0ah, '  3. Multiplication', 0dh,0ah, '  4. Division', 0dh,0ah, '  5. Negation', 0dh,0ah, '  6. Square', 0dh,0ah, '  7. Cube', 0dh,0ah, '  8. OR', 0dh,0ah, '  9. AND ', 0dh,0ah, ' 10. XOR', 0dh,0ah, ' 11. NOT',0dh,0ah, ' 12. Modulus',0dh,0ah, ' 13. Rotate Left', 0dh,0ah, ' 14. Rotate Right', 0dh,0ah, '  0. EXIT', '$'
 
 msg_A db 'The SUM of two Numbers = $', 0dh,0ah       ;Printing Strings
 msg_S db 'The SUBTRACTION of two Numbers = $', 0dh,0ah
