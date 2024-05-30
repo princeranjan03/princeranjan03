@@ -1,0 +1,79 @@
+Exp 4 :
+ 
+4X1 
+
+`timescale 1ns / 1ps
+
+module Mux(
+    input A,
+    input B,
+    output reg Out,
+    input i0,
+    input i1,
+    input i2,
+    input i3
+    );
+    
+    
+    always @ *
+    begin
+    
+            case({A,B})
+                        2'b00 : begin
+                        
+                        Out = i0;
+                        
+                        end
+                        
+                        2'b01 : begin
+                                                
+                        Out = i1;
+                                                
+                        end
+                        
+                        2'b10 : begin
+                        
+                        Out = i2;
+                                                
+                        end
+                        
+                        2'b11 : begin
+                        
+                        Out = i3;
+                                                
+                        end
+                                                
+            endcase
+            end
+    
+endmodule
+
+
+TB : 
+
+
+`timescale 1ns / 1ps
+
+
+
+module Mux_tb();
+
+
+        reg A,B,i0,i1,i2,i3;
+        wire Out;
+        
+            Mux uut (A,B,Out,i0,i1,i2,i3);
+        
+        initial begin
+        
+               i0=1;i1=0;i2=1;i3=0;
+        
+               A=0;B=0;
+               #20 A=0;B=1;
+               #20 A=1;B=0;
+               #20 A=1;B=1;
+               #20 $finish;
+        
+        
+        end
+endmodule
